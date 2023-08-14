@@ -14,6 +14,7 @@ const Color kWhite = Color(0xffffffff);
 
 
 const Color kPrimary = Color(0xff101C60);
+const Color kGradBorder = Color(0xffB0AEFE);
 
 const kGrad2 = LinearGradient(colors: [Color(0xff78C9FE), Color(0xffAE71FE)], begin: Alignment.topLeft, end: Alignment.bottomRight);
 
