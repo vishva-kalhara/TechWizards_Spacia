@@ -33,9 +33,12 @@ class OnboardingPage extends StatelessWidget {
           ),
           Text(
             "Experience a new Adventure.",
-            style: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w500, color: kBlack350),
+            style: poppinsRegular.copyWith(
+              color: kBlack350,
+              fontSize: 14,
+            ),
           ),
-          SizedBox(height: SizeConfig.blockSizeVertical! * 5),
+          const SizedBox(height: 45),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -81,7 +84,7 @@ class OnboardingPage extends StatelessWidget {
                 ),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
