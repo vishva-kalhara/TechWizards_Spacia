@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:spacia/app_style.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:spacia/screens/home.dart';
-import 'package:spacia/size_config.dart';
-
 import 'package:spacia/routes/routes.dart' as route;
+import 'package:spacia/app_style.dart';
+import 'package:spacia/size_config.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -44,6 +41,9 @@ class OnboardingPage extends StatelessWidget {
             children: [
               TextButton(
                 style: btnStyle.copyWith(
+                  padding: const MaterialStatePropertyAll(
+                    EdgeInsets.symmetric(vertical: 17, horizontal: 64),
+                  ),
                   backgroundColor: MaterialStateProperty.all<Color>(kTextBoxBorder),
                 ),
                 onPressed: () => Navigator.pushNamed(context, route.homePage),
