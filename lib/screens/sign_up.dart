@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spacia/app_style.dart';
 import 'package:spacia/size_config.dart';
+import 'package:spacia/routes/routes.dart' as route;
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -70,7 +71,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           EdgeInsets.symmetric(vertical: 17),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () => Navigator.pushNamed(context, route.homePage),
                       child: Text(
                         "Sign up",
                         style: poppinsRegular,
@@ -89,10 +90,10 @@ class _SignUpPageState extends State<SignUpPage> {
                     EdgeInsets.symmetric(vertical: 17),
                   ),
                   backgroundColor: MaterialStateProperty.all<Color>(
-                    kTextBoxBorder.withOpacity(.75),
+                    kTextBoxBorder.withOpacity(.85),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => Navigator.pushNamed(context, route.loginPage),
                 child: Text(
                   "I have an account",
                   style: poppinsSemiBold.copyWith(color: kBlack900),
