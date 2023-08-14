@@ -77,24 +77,28 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                     ),
                   ),
-                  const Row(
-                    children: [
-                      // ConstrainedBox(
-                      //   constraints: BoxConstraints.tightFor(width: ),
-                      //   child: TextButton(
-                      //     style: btnStyle,
-                      //     onPressed: () {},
-                      //     child: Text(
-                      //       "Sign up",
-                      //       style: poppinsRegular,
-                      //     ),
-                      //   ),
-                      // ),
-                    ],
-                  )
                 ],
               ),
-            )
+            ),
+            const SizedBox(height: 24),
+            SizedBox(
+              width: double.infinity,
+              child: TextButton(
+                style: btnStyle.copyWith(
+                  padding: const MaterialStatePropertyAll(
+                    EdgeInsets.symmetric(vertical: 17),
+                  ),
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                    kTextBoxBorder.withOpacity(.75),
+                  ),
+                ),
+                onPressed: () {},
+                child: Text(
+                  "I have an account",
+                  style: poppinsSemiBold.copyWith(color: kBlack900),
+                ),
+              ),
+            ),
           ],
         ),
       ),
