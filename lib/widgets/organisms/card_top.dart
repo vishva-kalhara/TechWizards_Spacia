@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spacia/app_style.dart';
-import 'package:spacia/widgets/molecules/text_chip.dart';
+import 'package:spacia/widgets/molecules/interchange_chip.dart';
 
 class CardTop extends StatelessWidget {
   const CardTop({

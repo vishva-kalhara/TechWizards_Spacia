@@ -20,6 +20,9 @@ const Color kBlue300 = Color(0xff959FCD);
 const Color kBlue200 = Color(0xffD3D9F4);
 const Color kBlue100 = Color(0xffD3D9F4);
 
+const Color kGreen200 = Color(0xffC7F5D4);
+const Color kGreen500 = Color(0xff4EB069);
+
 const Color kGradBorder = Color(0xffB0AEFE);
 
 const kGrad2 = LinearGradient(colors: [Color(0xff78C9FE), Color(0xffAE71FE)], begin: Alignment.topLeft, end: Alignment.bottomRight);

@@ -45,6 +45,7 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kContainer,
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -63,7 +64,7 @@ class _TabsScreenState extends State<TabsScreen> {
         tabMargin: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         gap: 8,
-        backgroundColor: kWhite,
+        backgroundColor: kBlue100.withOpacity(.35),
         color: kBlue500,
         activeColor: kPrimary,
         tabs: [
