@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spacia/routes/routes.dart' as route;
 import 'package:spacia/app_style.dart';
+import 'package:spacia/services/auth.dart';
 import 'package:spacia/size_config.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -10,6 +11,21 @@ class OnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
+
+    final AuthService _auth = AuthService();
+
+    void signInAnonimously() async {
+      dynamic result = await _auth.signInAnon();
+      if (result == null) {
+        print("Error in Anonim");
+      } else {
+        print(result);
+        // print(result.User);
+        // print(result.metadata);
+        // print(result.metadata.uid);
+        // Navigator.pushNamed(context, route.homePage);
+      }
+    }
 
     return Scaffold(
       body: Column(
@@ -46,7 +62,7 @@ class OnboardingPage extends StatelessWidget {
                   ),
                   backgroundColor: MaterialStateProperty.all<Color>(kTextBoxBorder),
                 ),
-                onPressed: () => Navigator.pushNamed(context, route.homePage),
+                onPressed: signInAnonimously,
                 child: Text("Skip", style: poppinsRegular.copyWith(color: kBlack900)),
               ),
               const SizedBox(width: 10),

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:spacia/widgets/templates/ticket.dart';
-import 'package:spacia/models/ticket_model.dart';
+// import 'package:spacia/models/ticket_model.dart';
 import 'package:spacia/routes/routes.dart' as route;
 
 class SchedulesScreen extends StatelessWidget {
   SchedulesScreen({super.key});
 
-  final List<TicketModel> _ticketData = [];
+  // final List<TicketModel> _ticketData = [];
 
   @override
   Widget build(BuildContext context) {

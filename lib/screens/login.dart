@@ -3,6 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spacia/app_style.dart';
 import 'package:spacia/size_config.dart';
 import 'package:spacia/routes/routes.dart' as route;
+// import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:spacia/services/auth.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -12,6 +14,25 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  // String? errorMsg = '';
+  // bool isLogin = true;
+
+  // final TextEditingController _controllerEmail = TextEditingController();
+  // final TextEditingController _controllerPassword = TextEditingController();
+
+  // Future<void> signInWithEmailAndPassword() async {
+  //   try {
+  //     await Auth().signInWithEmailAndPassword(
+  //       email: _controllerEmail.text,
+  //       password: _controllerPassword.text,
+  //     );
+  //   } on FirebaseAuthException catch (e) {
+  //     setState(() {
+  //       errorMsg = e.message;
+  //     });
+  //   }
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

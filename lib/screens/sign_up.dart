@@ -3,6 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spacia/app_style.dart';
 import 'package:spacia/size_config.dart';
 import 'package:spacia/routes/routes.dart' as route;
+// import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:spacia/services/auth.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -12,6 +14,25 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
+  //   String? errorMsg = '';
+  // bool isLogin = true;
+
+  final TextEditingController _controllerEmail = TextEditingController();
+  final TextEditingController _controllerPassword = TextEditingController();
+
+  // Future<void> createUserWithEmailAndPassword() async {
+  //   try {
+  //     await Auth().createUserWithEmailAndPassword(
+  //       email: _controllerEmail.text,
+  //       password: _controllerPassword.text,
+  //     );
+  //   } on FirebaseAuthException catch (e) {
+  //     setState(() {
+  //       errorMsg = e.message;
+  //     });
+  //   }
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,11 +60,13 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                   const SizedBox(height: 45),
                   TextFormField(
+                    controller: _controllerEmail,
                     keyboardType: TextInputType.emailAddress,
                     decoration: txtBox.copyWith(hintText: "Email", prefixIcon: const Icon(Icons.markunread)),
                   ),
                   const SizedBox(height: 8),
                   TextFormField(
+                    controller: _controllerPassword,
                     keyboardType: TextInputType.text,
                     decoration: txtBox.copyWith(hintText: "Password", prefixIcon: const Icon(Icons.lock)),
                   ),
