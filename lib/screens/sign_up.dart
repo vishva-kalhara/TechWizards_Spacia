@@ -39,23 +39,23 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                   const SizedBox(height: 45),
                   TextFormField(
-                    keyboardType: TextInputType.number,
-                    decoration: txtBox.copyWith(hintText: "Username", prefixIcon: const Icon(Icons.markunread)),
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: txtBox.copyWith(hintText: "Email", prefixIcon: const Icon(Icons.markunread)),
                   ),
                   const SizedBox(height: 8),
                   TextFormField(
-                    keyboardType: TextInputType.number,
+                    keyboardType: TextInputType.text,
                     decoration: txtBox.copyWith(hintText: "Password", prefixIcon: const Icon(Icons.lock)),
                   ),
                   const SizedBox(height: 8),
                   TextFormField(
-                    keyboardType: TextInputType.number,
+                    keyboardType: TextInputType.text,
                     decoration: txtBox.copyWith(hintText: "Confirm Password", prefixIcon: const Icon(Icons.lock)),
                   ),
                   const SizedBox(height: 32),
                   TextFormField(
-                    keyboardType: TextInputType.number,
-                    decoration: txtBox.copyWith(hintText: "E-mail", prefixIcon: const Icon(Icons.markunread)),
+                    keyboardType: TextInputType.text,
+                    decoration: txtBox.copyWith(hintText: "Username", prefixIcon: const Icon(Icons.markunread)),
                   ),
                   const SizedBox(height: 8),
                   TextFormField(

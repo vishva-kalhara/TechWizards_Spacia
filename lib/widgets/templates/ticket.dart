@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:spacia/size_config.dart';
 import 'package:spacia/widgets/organisms/card_bottom.dart';
 import 'package:spacia/widgets/organisms/card_top.dart';
 
@@ -15,7 +16,7 @@ class Ticket extends StatelessWidget {
     required this.interchanges,
     required this.isSeatAvailable,
     required this.isMine,
-    required this.inputText
+    required this.inputText,
   });
 
   final String fromMain;
@@ -31,8 +32,10 @@ class Ticket extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
+
     return Padding(
-      padding: const EdgeInsets.only(top: 16),
+      padding: EdgeInsets.only(top: SizeConfig.blockSizeVertical! * 1),
       child: Stack(
         children: [
           Positioned(
@@ -62,7 +65,7 @@ class Ticket extends StatelessWidget {
           ),
           Positioned(
             // top: 24,
-            bottom: 18,
+            bottom: SizeConfig.blockSizeHorizontal! * 5,
             left: 18,
             right: 24,
             child: CardBottom(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spacia/app_style.dart';
 
+
 class SearchCard extends StatelessWidget {
   const SearchCard({super.key});
 

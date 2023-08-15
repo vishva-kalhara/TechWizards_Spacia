@@ -32,7 +32,7 @@ class _TabsScreenState extends State<TabsScreen> {
 
   void _setShedulesScreen() {
     setState(() {
-      content = const SchedulesScreen();
+      content = SchedulesScreen();
     });
   }
 

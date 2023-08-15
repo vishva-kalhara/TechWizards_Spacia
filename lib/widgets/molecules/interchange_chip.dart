@@ -9,7 +9,7 @@ class TextChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: kBlue200, borderRadius: BorderRadius.circular(7)),
+      decoration: BoxDecoration(color: kBlue200.withOpacity(.5), borderRadius: BorderRadius.circular(7)),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 9),
       child: Text(
         "$interchanges Interchanges",

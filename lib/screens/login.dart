@@ -39,12 +39,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   const SizedBox(height: 45),
                   TextFormField(
-                    keyboardType: TextInputType.number,
-                    decoration: txtBox.copyWith(hintText: "Username", prefixIcon: const Icon(Icons.markunread)),
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: txtBox.copyWith(hintText: "Email", prefixIcon: const Icon(Icons.markunread)),
                   ),
                   const SizedBox(height: 8),
                   TextFormField(
-                    keyboardType: TextInputType.number,
+                    keyboardType: TextInputType.text,
                     decoration: txtBox.copyWith(hintText: "Password", prefixIcon: const Icon(Icons.lock)),
                   ),
                   const SizedBox(height: 24),
@@ -87,6 +87,25 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
+            const SizedBox(height: 100),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextButton(
+                  // style: btnStyle.copyWith(
+                  //   padding: const MaterialStatePropertyAll(
+                  //     EdgeInsets.symmetric(vertical: 17),
+                  //   ),
+                  // ),
+                  onPressed: () => Navigator.pushNamed(context, route.homePage),
+
+                  child: Text(
+                    "Skip for now",
+                    style: poppinsSemiBold.copyWith(color: kBlack900, decoration: TextDecoration.underline),
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
