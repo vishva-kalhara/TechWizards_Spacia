@@ -19,7 +19,7 @@ class OnboardingPage extends StatelessWidget {
       if (result == null) {
         print("Error in Anonim");
       } else {
-        print(result);
+        print(result.uid);
         // print(result.User);
         // print(result.metadata);
         // print(result.metadata.uid);
