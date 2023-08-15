@@ -14,4 +14,16 @@ final dummyData = [
     isMine: false,
     inputText: 3,
   ),
+  TicketModel(
+    fromMain: "LK",
+    fromSub: "Colombo",
+    fromDate: "30-Aug",
+    toMain: "MRS",
+    toSub: "HQ",
+    toDate: "30-Dec",
+    interchanges: 5,
+    isSeatAvailable: true,
+    isMine: true,
+    inputText: 1,
+  )
 ];
