@@ -12,8 +12,12 @@ const Color kOnTextField = Color(0xff575757);
 
 const Color kWhite = Color(0xffffffff);
 
-
 const Color kPrimary = Color(0xff101C60);
+const Color kBlue500 = Color(0xff5C6EBE);
+const Color kBlue300 = Color(0xff959FCD);
+const Color kBlue200 = Color(0xffD3D9F4);
+const Color kBlue100 = Color(0xffD3D9F4);
+
 const Color kGradBorder = Color(0xffB0AEFE);
 
 const kGrad2 = LinearGradient(colors: [Color(0xff78C9FE), Color(0xffAE71FE)], begin: Alignment.topLeft, end: Alignment.bottomRight);
