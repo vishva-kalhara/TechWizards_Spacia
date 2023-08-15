@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:spacia/app_style.dart';
 import 'package:spacia/screens/home.dart';
+import 'package:spacia/screens/my_tickets.dart';
+import 'package:spacia/screens/schedules.dart';
 // import 'package:spacia/widgets/templates/bottom_nav.dart';
 import 'package:spacia/widgets/templates/top_nav.dart';
 // import 'package:spacia/widgets/templates/search.dart';
@@ -16,6 +18,29 @@ class TabsScreen extends StatefulWidget {
 
 class _TabsScreenState extends State<TabsScreen> {
   Widget content = const HomePage();
+  @override
+  void initState() {
+    super.initState();
+    _setHomeScreen();
+  }
+
+  void _setHomeScreen() {
+    setState(() {
+      content = const HomePage();
+    });
+  }
+
+  void _setShedulesScreen() {
+    setState(() {
+      content = const SchedulesScreen();
+    });
+  }
+
+  void _setMyTicketsScreen() {
+    setState(() {
+      content = const MyTicketsScreen();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +52,7 @@ class _TabsScreenState extends State<TabsScreen> {
           Expanded(
             child: SingleChildScrollView(
               child: Container(
+                decoration: const BoxDecoration(color: kContainer),
                 child: content,
               ),
             ),
@@ -42,19 +68,19 @@ class _TabsScreenState extends State<TabsScreen> {
         activeColor: kPrimary,
         tabs: [
           GButton(
-            onPressed: () {},
+            onPressed: _setHomeScreen,
             icon: Icons.home,
             text: "Home",
             backgroundColor: kBlue100,
           ),
           GButton(
-            onPressed: () {},
+            onPressed: _setShedulesScreen,
             icon: Icons.calendar_month_rounded,
             text: "Schedule",
             backgroundColor: kBlue100,
           ),
           GButton(
-            onPressed: () {},
+            onPressed: _setMyTicketsScreen,
             icon: Icons.airplane_ticket,
             text: "My Tickets",
             backgroundColor: kBlue100,

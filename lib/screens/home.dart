@@ -4,18 +4,10 @@ import 'package:spacia/widgets/templates/search.dart';
 import 'package:spacia/widgets/templates/top_nav.dart';
 // import 'package:spacia/widgets/templates/bottom_nav.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
   // void _selectPage(int index) {
-  //   setState(() {});
-  // }
-
   @override
   Widget build(BuildContext context) {
     return const Padding(
@@ -25,10 +17,7 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SearchCard(),
-          SearchCard(),
-          SearchCard(),
-          SearchCard(),
-          SearchCard(),
+
           // SearchCard(),
           // SearchCard(),
           // SearchCard(),

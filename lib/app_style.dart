@@ -10,6 +10,7 @@ const Color kTextBoxBorder = Color(0xffF1F4FF);
 const Color kTextField = Color(0xffF8F9FD);
 const Color kOnTextField = Color(0xff575757);
 
+const Color kContainer = Color(0xffF4F4F5);
 const Color kWhite = Color(0xffffffff);
 
 const Color kPrimary = Color(0xff101C60);
