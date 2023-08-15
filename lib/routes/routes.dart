@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:spacia/screens/home.dart';
+// import 'package:spacia/screens/home.dart';
 import 'package:spacia/screens/login.dart';
 import 'package:spacia/screens/onboarding.dart';
 import 'package:spacia/screens/sign_up.dart';

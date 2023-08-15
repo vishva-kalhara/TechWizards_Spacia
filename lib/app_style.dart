@@ -5,6 +5,7 @@ const Color kBlack = Color(0xff000000);
 const Color kBlack900 = Color(0xff1e1e1e);
 const Color kBlack350 = Color(0xff747474);
 const Color kBlack200 = Color(0xffA6A6A6);
+const Color kBlack100 = Color(0xffE4E4E4);
 
 const Color kTextBoxBorder = Color(0xffF1F4FF);
 const Color kTextField = Color(0xffF8F9FD);
@@ -33,13 +34,19 @@ final btnStyle = TextButton.styleFrom(
 final poppinsSemiBold = GoogleFonts.poppins(
   color: kWhite,
   fontSize: 16,
+  fontWeight: FontWeight.w600,
+);
+
+final poppinsMedium = GoogleFonts.poppins(
+  color: kWhite,
+  fontSize: 16,
   fontWeight: FontWeight.w500,
 );
 
 final poppinsRegular = GoogleFonts.poppins(
   color: kWhite,
   fontSize: 16,
-  fontWeight: FontWeight.w500,
+  fontWeight: FontWeight.w400,
 );
 
 final txtBox = InputDecoration(
